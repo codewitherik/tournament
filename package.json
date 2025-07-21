@@ -1,14 +1,14 @@
 {
   "name": "tourney-2025",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "codewitherik and dotdivlearn",
+  "license": "MIT",
+  "description": "Herzlich willkommen auf der offzielle Seite von Tourney Turnierplaner 2025 Gmbh -- Die Seite wurde erstelllt mit &hearts, von Erik Schmidt Mike und Alexander Paul",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
