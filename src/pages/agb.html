@@ -2,85 +2,94 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>AGB – Tourney-Turnierplaner GmbH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGB – Tourney Turnierplaner</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { 
+      background-color: #f8f9fa; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .agb-container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      max-width: 900px;
+    }
+    .language-selector {
+      background: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 1rem;
+      border-radius: 10px 10px 0 0;
+    }
+    .agb-content {
+      padding: 2rem;
+    }
+    h1 {
+      color: #0d6efd;
+      border-bottom: 3px solid #0d6efd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #495057;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .btn-language {
+      min-width: 120px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Allgemeine Geschäftsbedingungen (AGB) der Tourney-Turnierplaner GmbH</h1>
-  <p><strong>Stand: Juli 2025</strong></p>
+  <div class="container-fluid">
+    <div class="agb-container">
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h4 class="mb-0 text-muted">
+              <i class="bi bi-translate"></i> Sprache wählen
+            </h4>
+          </div>
+          <div class="col-md-6 text-end">
+            <select id="lang-switch" class="form-select form-select-lg btn-language d-inline-block w-auto">
+              <option value="de">🇩🇪 Deutsch</option>
+              <option value="ru">🇷🇺 Русский</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- AGB Content -->
+      <div class="agb-content" id="agb-content">
+        <!-- Content will be loaded dynamically -->
+      </div>
+      
+      <!-- Back Button -->
+      <div class="p-3 border-top">
+        <a href="../../index.html" class="btn btn-outline-primary">
+          <i class="bi bi-arrow-left"></i> Zurück zur Startseite
+        </a>
+      </div>
+    </div>
+  </div>
 
-  <h2>1. Geltungsbereich</h2>
-  <p>
-    Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für die Nutzung der Online-Dienste und Softwarelösungen der Tourney-Turnierplaner GmbH, Im Mitterfeld 5, 82024 Taufkirchen, Deutschland (im Folgenden „Tourney“ genannt).
-  </p>
-  <p>
-    Mit der Registrierung und Nutzung der Plattform erklärt sich der Nutzer mit diesen AGB einverstanden.
-  </p>
-
-  <h2>2. Vertragsgegenstand</h2>
-  <p>
-    Tourney stellt eine webbasierte Softwareplattform zur Planung und Durchführung von Turnieren und Wettbewerben bereit. Der Leistungsumfang umfasst Funktionen zur Anmeldung, Turnierverwaltung, Spielplanerstellung, Ergebniserfassung und Kommunikation der Teilnehmer.
-  </p>
-
-  <h2>3. Registrierung und Nutzerkonto</h2>
-  <ol>
-    <li>Um die Dienste nutzen zu können, muss sich der Nutzer registrieren und ein Nutzerkonto anlegen.</li>
-    <li>Der Nutzer ist verpflichtet, bei der Registrierung wahrheitsgemäße und vollständige Angaben zu machen.</li>
-    <li>Die Zugangsdaten sind vertraulich zu behandeln und dürfen nicht an Dritte weitergegeben werden.</li>
-    <li>Tourney behält sich das Recht vor, Nutzerkonten bei Verstößen gegen diese AGB zu sperren oder zu löschen.</li>
-  </ol>
-
-  <h2>4. Leistungen und Verfügbarkeit</h2>
-  <ol>
-    <li>Tourney bemüht sich, die Plattform möglichst dauerhaft und störungsfrei zur Verfügung zu stellen.</li>
-    <li>Wartungsarbeiten oder unvorhergesehene Ausfälle können zu temporären Einschränkungen führen. Tourney wird Nutzer über geplante Wartungsarbeiten rechtzeitig informieren.</li>
-  </ol>
-
-  <h2>5. Preise und Zahlungsbedingungen</h2>
-  <ol>
-    <li>Die Nutzung der Grundfunktionen ist kostenfrei. Für erweiterte Funktionen oder Premiumdienste können Gebühren anfallen.</li>
-    <li>Preise und Zahlungsmodalitäten werden im Rahmen des jeweiligen Angebots transparent dargestellt.</li>
-    <li>Zahlungen erfolgen über sichere Zahlungsdienstleister wie PayPal, Klarna oder Stripe.</li>
-  </ol>
-
-  <h2>6. Pflichten des Nutzers</h2>
-  <ol>
-    <li>Der Nutzer verpflichtet sich, die Plattform nicht für rechtswidrige Zwecke zu nutzen.</li>
-    <li>Es ist untersagt, Inhalte hochzuladen oder zu verbreiten, die gegen geltendes Recht, Rechte Dritter oder diese AGB verstoßen.</li>
-    <li>Der Nutzer ist für die Einhaltung der Datenschutzbestimmungen bei der Nutzung der Plattform verantwortlich, insbesondere wenn personenbezogene Daten Dritter verarbeitet werden.</li>
-  </ol>
-
-  <h2>7. Haftung</h2>
-  <ol>
-    <li>Tourney haftet nur für Schäden, die durch Vorsatz oder grobe Fahrlässigkeit entstanden sind.</li>
-    <li>Für leichte Fahrlässigkeit haftet Tourney nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten).</li>
-    <li>Die Haftung ist auf den vorhersehbaren, typischerweise eintretenden Schaden begrenzt.</li>
-    <li>Die Haftung für Datenverlust ist auf den typischen Aufwand der Datenwiederherstellung beschränkt.</li>
-  </ol>
-
-  <h2>8. Datenschutz</h2>
-  <p>
-    Der Schutz personenbezogener Daten ist uns wichtig. Details sind in der Datenschutzerklärung geregelt, die integraler Bestandteil dieser AGB ist.
-  </p>
-
-  <h2>9. Kündigung und Löschung des Nutzerkontos</h2>
-  <ol>
-    <li>Der Nutzer kann sein Konto jederzeit kündigen und löschen lassen.</li>
-    <li>Tourney behält sich das Recht vor, Konten bei Verstößen gegen die AGB oder gesetzliche Vorgaben zu löschen.</li>
-  </ol>
-
-  <h2>10. Änderungen der AGB</h2>
-  <p>
-    Tourney behält sich das Recht vor, diese AGB zu ändern. Änderungen werden dem Nutzer mindestens 14 Tage vor Inkrafttreten per E-Mail mitgeteilt.
-  </p>
-  <p>
-    Widerspricht der Nutzer den Änderungen nicht innerhalb von 14 Tagen, gelten die Änderungen als angenommen.
-  </p>
-
-  <h2>11. Schlussbestimmungen</h2>
-  <ol>
-    <li>Es gilt das Recht der Bundesrepublik Deutschland.</li>
-    <li>Gerichtsstand für alle Streitigkeiten aus diesem Vertragsverhältnis ist, soweit gesetzlich zulässig, München.</li>
-    <li>Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</li>
-  </ol>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom Script -->
+  <script type="module">
+    import { agbs, getLang, setAGB, initLanguageSwitch } from '../js/sprachen.js';
+    
+    // Initialisierung
+    initLanguageSwitch();
+  </script>
 </body>
 </html>
