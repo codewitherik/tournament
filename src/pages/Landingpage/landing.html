@@ -1,170 +1,196 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tourney – Dein Turnierplaner</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Typewriter-Effekt */
-    .typewriter h1 {
-      overflow: hidden;
-      border-right: .15em solid orange;
-      white-space: nowrap;
-      animation:
-        typing 3s steps(30, end),
-        blink-caret .75s step-end infinite;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourney – Dein Turnierplaner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Typewriter-Effekt */
+        .typewriter h1 {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            animation:
+                typing 3s steps(30, end),
+                blink-caret .75s step-end infinite;
+        }
 
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
+        @keyframes typing {
+            from {
+                width: 0
+            }
 
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: orange; }
-    }
-  </style>
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- 1. Hero -->
-  <section class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center px-4">
-    <div class="typewriter text-4xl md:text-6xl font-bold">
-      <h1>Plane Turniere in Minuten – mit Tourney</h1>
-    </div>
-    <p class="mt-6 text-lg max-w-xl">Automatisiere Anmeldung, Spielpläne & Ergebnisse. Online & mobil optimiert.</p>
-    <a href="#features" class="mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Loslegen</a>
-  </section>
+    <!-- 1. Hero -->
+    <section
+        class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center px-4">
+        <div class="typewriter text-4xl md:text-6xl font-bold">
+            <h1>Plane Turniere in Minuten – mit Tourney</h1>
+        </div>
+        <p class="mt-6 text-lg max-w-xl">Automatisiere Anmeldung, Spielpläne & Ergebnisse. Online & mobil optimiert.</p>
+        <a href="#features"
+            class="mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Loslegen</a>
+    </section>
 
-  <!-- 2. Features -->
-  <section id="features" class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-6">Funktionen im Überblick</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-      <div>
-        <h3 class="text-xl font-semibold">Automatische Spielpläne</h3>
-        <p>Ein Klick – dein Turnier steht.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Live-Ergebnisse</h3>
-        <p>Ergebnisse in Echtzeit – für Zuschauer & Teams.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Flexible Turnierformate</h3>
-        <p>KO, Gruppen, Liga – alles unterstützt.</p>
-      </div>
-    </div>
-  </section>
+    <!-- 2. Features -->
+    <section id="features" class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-6">Funktionen im Überblick</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+            <div>
+                <h3 class="text-xl font-semibold">Automatische Spielpläne</h3>
+                <p>Ein Klick – dein Turnier steht.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Live-Ergebnisse</h3>
+                <p>Ergebnisse in Echtzeit – für Zuschauer & Teams.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Flexible Turnierformate</h3>
+                <p>KO, Gruppen, Liga – alles unterstützt.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- 3. Vorteile -->
-  <section class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Warum Tourney?</h2>
-    <ul class="space-y-4 max-w-2xl mx-auto text-lg">
-      <li>✅ In Minuten startklar</li>
-      <li>✅ Keine Registrierung nötig</li>
-      <li>✅ Optimiert für Mobile & Desktop</li>
-      <li>✅ Kostenloser Plan verfügbar</li>
-    </ul>
-  </section>
-
-  <!-- 4. Screenshot / Mockup -->
-  <section class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-6">So sieht dein Turnier aus</h2>
-    <img src="https://via.placeholder.com/900x500?text=Turnier+Mockup" alt="Turnieransicht" class="mx-auto rounded-xl shadow-lg" />
-  </section>
-
-  <!-- 5. Video -->
-  <section class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Video-Demo</h2>
-    <div class="flex justify-center">
-      <iframe class="w-full max-w-3xl h-64 md:h-96" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tourney Demo" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <!-- 6. Testimonials -->
-  <section class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-6">Was andere sagen</h2>
-    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
-      <blockquote class="p-4 shadow rounded bg-gray-50">🎉 “Tourney hat unser Dorfturnier gerettet.”<br><small>- Sven, SV Musterstadt</small></blockquote>
-      <blockquote class="p-4 shadow rounded bg-gray-50">⚽ “Einfach & genial.”<br><small>- Jana, Fußballtrainerin</small></blockquote>
-      <blockquote class="p-4 shadow rounded bg-gray-50">🏆 “Nie wieder Excel!”<br><small>- Kevin, eSports-Organisator</small></blockquote>
-    </div>
-  </section>
-
-  <!-- 7. Turnierarten -->
-  <section class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Unterstützte Turnierarten</h2>
-    <p>KO-System, Doppel-KO, Gruppenphase, Liga & mehr.</p>
-    <div class="mt-6 flex justify-center flex-wrap gap-4">
-      <span class="bg-white px-4 py-2 rounded shadow">Einzel</span>
-      <span class="bg-white px-4 py-2 rounded shadow">Team</span>
-      <span class="bg-white px-4 py-2 rounded shadow">Mixed</span>
-    </div>
-  </section>
-
-  <!-- 8. Preise -->
-  <section class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-6">Preise</h2>
-    <div class="flex flex-col md:flex-row justify-center gap-8">
-      <div class="p-6 border rounded shadow-md">
-        <h3 class="text-xl font-bold">Free</h3>
-        <p class="text-2xl mt-2 font-semibold">0 €</p>
-        <ul class="mt-4 text-left space-y-2">
-          <li>✔ 1 Turnier</li>
-          <li>✔ Basisfunktionen</li>
+    <!-- 3. Vorteile -->
+    <section class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">Warum Tourney?</h2>
+        <ul class="space-y-4 max-w-2xl mx-auto text-lg">
+            <li>✅ In Minuten startklar</li>
+            <li>✅ Keine Registrierung nötig</li>
+            <li>✅ Optimiert für Mobile & Desktop</li>
+            <li>✅ Kostenloser Plan verfügbar</li>
         </ul>
-      </div>
-      <div class="p-6 border rounded shadow-md bg-blue-50">
-        <h3 class="text-xl font-bold">Pro</h3>
-        <p class="text-2xl mt-2 font-semibold">9 €/Monat</p>
-        <ul class="mt-4 text-left space-y-2">
-          <li>✔ Unlimitierte Turniere</li>
-          <li>✔ Export, Branding, Support</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 9. FAQ -->
-  <section class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Häufige Fragen</h2>
-    <div class="max-w-3xl mx-auto text-left space-y-4">
-      <details class="bg-white p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer">Brauche ich ein Konto?</summary>
-        <p class="mt-2">Nein. Du kannst sofort starten.</p>
-      </details>
-      <details class="bg-white p-4 rounded shadow">
-        <summary class="font-semibold cursor-pointer">Ist Tourney kostenlos?</summary>
-        <p class="mt-2">Ja, es gibt einen Free-Plan.</p>
-      </details>
-    </div>
-  </section>
+    <!-- 4. Screenshot / Mockup -->
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-6">So sieht dein Turnier aus</h2>
+        <img src="https://via.placeholder.com/900x500?text=Turnier+Mockup" alt="Turnieransicht"
+            class="mx-auto rounded-xl shadow-lg" />
+    </section>
 
-  <!-- 10. Google Maps -->
-  <section class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-6">Hier findest du uns</h2>
-    <div class="flex justify-center">
-      <iframe
-        class="w-full max-w-3xl h-80 border rounded"
-        src="https://maps.google.com/maps?q=Berlin&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
+    <!-- 5. Video -->
+    <section class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">Video-Demo</h2>
+        <div class="flex justify-center">
+            <iframe class="w-full max-w-3xl h-64 md:h-96" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Tourney Demo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- 11. Kontakt -->
-  <section class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
-    <form class="max-w-xl mx-auto space-y-4 text-left">
-      <input type="text" placeholder="Name" class="w-full p-3 border rounded" required />
-      <input type="email" placeholder="E-Mail" class="w-full p-3 border rounded" required />
-      <textarea placeholder="Nachricht" class="w-full p-3 border rounded" rows="5" required></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Absenden</button>
-    </form>
-  </section>
+    <!-- 6. Testimonials -->
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-6">Was andere sagen</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+            <blockquote class="p-4 shadow rounded bg-gray-50">🎉 “Tourney hat unser Dorfturnier gerettet.”<br><small>-
+                    Sven, SV Musterstadt</small></blockquote>
+            <blockquote class="p-4 shadow rounded bg-gray-50">⚽ “Einfach & genial.”<br><small>- Jana,
+                    Fußballtrainerin</small></blockquote>
+            <blockquote class="p-4 shadow rounded bg-gray-50">🏆 “Nie wieder Excel!”<br><small>- Kevin,
+                    eSports-Organisator</small></blockquote>
+        </div>
+    </section>
 
-  <footer class="py-8 text-center text-sm text-gray-500">
-    © 2025 Tourney. Alle Rechte vorbehalten.
-  </footer>
+    <!-- 7. Turnierarten -->
+    <section class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">Unterstützte Turnierarten</h2>
+        <p>KO-System, Doppel-KO, Gruppenphase, Liga & mehr.</p>
+        <div class="mt-6 flex justify-center flex-wrap gap-4">
+            <span class="bg-white px-4 py-2 rounded shadow">Einzel</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Team</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Mixed</span>
+        </div>
+    </section>
+
+    <!-- 8. Preise -->
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-6">Preise</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+            <div class="p-6 border rounded shadow-md">
+                <h3 class="text-xl font-bold">Free</h3>
+                <p class="text-2xl mt-2 font-semibold">0 €</p>
+                <ul class="mt-4 text-left space-y-2">
+                    <li>✔ 1 Turnier</li>
+                    <li>✔ Basisfunktionen</li>
+                </ul>
+            </div>
+            <div class="p-6 border rounded shadow-md bg-blue-50">
+                <h3 class="text-xl font-bold">Pro</h3>
+                <p class="text-2xl mt-2 font-semibold">9 €/Monat</p>
+                <ul class="mt-4 text-left space-y-2">
+                    <li>✔ Unlimitierte Turniere</li>
+                    <li>✔ Export, Branding, Support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">Häufige Fragen</h2>
+        <div class="max-w-3xl mx-auto text-left space-y-4">
+            <details class="bg-white p-4 rounded shadow">
+                <summary class="font-semibold cursor-pointer">Brauche ich ein Konto?</summary>
+                <p class="mt-2">Nein. Du kannst sofort starten.</p>
+            </details>
+            <details class="bg-white p-4 rounded shadow">
+                <summary class="font-semibold cursor-pointer">Ist Tourney kostenlos?</summary>
+                <p class="mt-2">Ja, es gibt einen Free-Plan.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- 10. Google Maps -->
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-6">Hier findest du uns</h2>
+        <div class="flex justify-center">
+            <iframe class="w-full max-w-3xl h-80 border rounded"
+                src="https://maps.google.com/maps?q=Berlin&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 11. Kontakt -->
+    <section class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
+        <form id="contact-form" class="max-w-xl mx-auto space-y-4 text-left">
+            <input type="text" name="user_name" placeholder="Name" class="w-full p-3 border rounded" required />
+            <input type="email" name="user_email" placeholder="E-Mail" class="w-full p-3 border rounded" required />
+            <textarea name="message" placeholder="Nachricht" class="w-full p-3 border rounded" rows="5"
+                required></textarea>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Absenden</button>
+        </form>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-gray-500">
+        © 2025 Tourney. Alle Rechte vorbehalten.
+    </footer>
+
+
+    <script src="landing.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
+
 </html>
